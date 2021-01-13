@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: inherit; }
+
+.heading-primary {
+  font-size: 3.6rem;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: .2rem; }
+
+.u-margin-bottom-large {
+  margin-bottom: 1.5rem; }
+
+.u-bold {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  margin-right: 1.5rem; }
+
+.u-margin-center {
+  text-align: center; }
+
+.u-center-align {
+  text-align: center; }
+
+.row {
+  color: #fff;
+  max-width: 114rem;
+  margin: 0 auto;
+  background-color: #777; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row [class^="col-"] {
+    background-color: orangered;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - (2 * 6rem)) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) /4); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem)/4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) /4 ) + 2 * 6rem); }
+  .row .col-1-of-5 {
+    width: calc((100% - 4 * 6rem) / 5); }
+  .row .col-2-of-5 {
+    width: calc( 2 * (100% - 4 * 6rem) / 5 + 6rem); }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+.section-home {
+  font-family: "Dosis", sans-serif;
+  padding: 12rem;
+  font-size: 5rem; }
+  .section-home ul {
+    list-style: none; }
+    .section-home ul li {
+      margin-top: .5rem; }
+      .section-home ul li a {
+        text-decoration: underline;
+        color: #000; }
+
+.section-navbar {
+  height: 6rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+  .section-navbar > * {
+    text-decoration: none;
+    color: #000; }
+  .section-navbar .navbar__logo {
+    margin-left: 20rem; }
+  .section-navbar .navbar__login {
+    cursor: pointer;
+    margin-left: 85rem; }
+  .section-navbar .navbar__details {
+    margin-left: 5rem; }
+  .section-navbar .navbar__signup {
+    margin-left: 5rem; }
+
+.section-details {
+  padding: 10rem 20rem; }
+  .section-details .details {
+    font-size: 2rem;
+    font-family: "Dosis", sans-serif; }
+    .section-details .details * :not(:first-child) {
+      margin-top: 1.5rem; }
+
+.section-signup {
+  background-color: #2a4066;
+  height: 69.2rem; }
+  .section-signup .signup__card {
+    margin: 0 auto;
+    max-width: 350px;
+    /* background: white; */
+    box-sizing: border-box;
+    padding-top: 5rem; }
+  .section-signup .form-container {
+    /* margin: 100px auto; */
+    padding: 30px;
+    max-width: 350px;
+    background: white;
+    box-sizing: border-box; }
+  .section-signup .container {
+    margin: 0 auto;
+    max-width: 350px;
+    /* background: white; */
+    box-sizing: border-box; }
+  .section-signup .form-container .head {
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+  .section-signup .Inputs {
+    padding-top: 50px; }
+  .section-signup form {
+    width: 100%; }
+  .section-signup form label {
+    display: block;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    line-height: 30px; }
+  .section-signup input, .section-signup select {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #858585;
+    border-radius: 5px;
+    box-sizing: border-box; }
+  .section-signup button {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 5px;
+    background: #3fb996;
+    border: hidden;
+    color: white;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+  .section-signup .footer {
+    text-align: center;
+    font-size: 10px;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+  .section-signup a {
+    text-decoration: none; }
+  .section-signup .signup {
+    margin: 20px;
+    text-align: center;
+    color: white;
+    /* font-weight: bold; */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+  .section-signup .signup a {
+    color: #3fb996; }
+  .section-signup input::-webkit-outer-spin-button,
+  .section-signup input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+
+.section-movieList {
+  min-height: 68rem;
+  background: #f7f7f7;
+  padding-top: 6rem;
+  font-family: "Roboto Mono", monospace; }
+  .section-movieList .movieList__vote {
+    text-align: center; }
+  .section-movieList .movieList__card {
+    padding: 5rem;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 35%;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+    font-size: 1.6rem; }
+  .section-movieList .movieList__flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .section-movieList .movieList__image {
+    margin-left: 5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+    .section-movieList .movieList__image--img {
+      height: 23.5rem;
+      border-radius: .2rem; }
+  .section-movieList .movieList__details {
+    margin-left: 2rem; }
+  .section-movieList .movieList__button {
+    margin-top: 1.5rem;
+    width: 100%;
+    background-color: #3363af;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: .2rem;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15); }
+  .section-movieList .movieList__votes {
+    color: #00fff2; }
+  .section-movieList .movieList__ipt {
+    padding: 1rem;
+    width: 25%;
+    display: inline-block;
+    margin-right: .8rem; }
+  .section-movieList .movieList__btn {
+    width: 7%;
+    background-color: #3363af;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: .2rem;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15); }

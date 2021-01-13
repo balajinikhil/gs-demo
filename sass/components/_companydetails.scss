@@ -1,0 +1,13 @@
+.section-details{
+    padding: 10rem 20rem;
+
+    .details{
+        font-size: 2rem;
+        font-family: $font-text;
+
+        * :not(:first-child){
+            margin-top: 1.5rem;
+        }
+    }
+
+}

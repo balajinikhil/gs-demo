@@ -1,0 +1,76 @@
+.section-movieList{
+    min-height: 68rem;
+    background: #f7f7f7;
+    padding-top: 6rem;
+    font-family: $font-heading;
+
+    .movieList{
+
+        &__vote{
+            text-align: center;
+        }
+
+        &__card{
+            padding: 5rem;
+            background-color: #fff;
+            margin: 0 auto;
+            width: 35%;
+            box-shadow: 0 2rem 4rem rgba($color-black, .15);
+            font-size: 1.6rem;
+        }
+
+        &__flex{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        &__image{
+            margin-left:5rem ;
+            box-shadow: 0 1rem 2rem rgba($color-black, .15);
+            
+            &--img{
+                height: 23.5rem;
+                border-radius: .2rem;
+            }
+        }
+        
+        &__details{
+            margin-left: 2rem;
+        }
+
+        &__button{
+            margin-top: 1.5rem;
+            width: 100%;
+            background-color: #3363af;
+            padding: 1rem 0;
+            font-size: 1.5rem;
+            color: #fff;
+            border-radius: .2rem;
+            box-shadow: 0 2rem 4rem rgba($color-black, .15);
+
+        }
+
+        &__votes{
+            color: rgb(0, 255, 242);
+        }
+
+        &__ipt{
+            padding: 1rem;
+            width: 25%;
+            display: inline-block;
+            margin-right: .8rem;
+        }
+
+        &__btn{
+            width: 7%;
+            background-color: #3363af;
+            padding: 1rem 0;
+            font-size: 1.5rem;
+            color: #fff;
+            border-radius: .2rem;
+            box-shadow: 0 2rem 4rem rgba($color-black, .15);
+        }
+
+    }
+}

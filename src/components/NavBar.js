@@ -28,7 +28,6 @@ class NavBar extends React.Component{
 
 
     render(){
-        console.log(this.props);
         return(
             <nav className="section-navbar">
                 <Link to="/" className="navbar__logo">Logo</Link>

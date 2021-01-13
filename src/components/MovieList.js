@@ -25,13 +25,11 @@ class MovieList extends React.Component{
         //     }
         // });
 
-        // console.log(response.data);
-
         this.apiCall();
     }
 
     apiCall =async () =>{
-        let response = await axios.get('http://www.omdbapi.com/',{
+        let response = await axios.get('https://www.omdbapi.com/',{
             params:{
                 apikey:'8ede4beb',
                 t:this.state.title
@@ -54,7 +52,6 @@ class MovieList extends React.Component{
 
 
     renderCard = () =>{
-        console.log(this.state);
         if(this.state.response == 'True'){
             return(
                 <>
@@ -73,8 +70,8 @@ class MovieList extends React.Component{
                         <div className="movieList__details">
                             <p className="movieList__heading">Movie Name:{this.state.Title}</p>
                             <p className="movieList__genere">Genere: {this.state.Genre}</p>
-                            <p className="movieList__direction">Director{this.state.Director}</p>
-                            <p className="movieList__staring">Staring{this.state.Actors}</p>
+                            <p className="movieList__direction">Director: {this.state.Director}</p>
+                            <p className="movieList__staring">Staring: {this.state.Actors}</p>
                             <p className="movieList__i">{this.state.Runtime} | {this.state.Language} | {this.state.Released} </p>
                             <p className="movieList__votes">137 views | voted by 12 people</p>
                         </div>

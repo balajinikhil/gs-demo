@@ -16,7 +16,6 @@ class Login extends React.Component{
 
         // eslint-disable-next-line
         if(Lemail == this.state.email && Lpwd == this.state.password ){
-            console.log('logged in');
             await this.props.changeLoggedIn(true);
             await this.props.history.push('/movie-list');
         }else{
@@ -25,7 +24,6 @@ class Login extends React.Component{
     }
 
     render(){
-        console.log(this.props);
         return(
             <section className="section-signup">
                 <div className="signup__card">

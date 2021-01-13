@@ -22,7 +22,6 @@ class SignUp extends React.Component{
     }
 
     render(){
-        console.log(this.props);
         return(
             <section className="section-signup">
                 <div className="signup__card">
